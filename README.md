@@ -1,8 +1,12 @@
 ### make docker image
-sudo docker build --tag nvim-image . 
+```bash
+sudo docker build --tag nvim-image .
+```
 
 ### run container
+```bash
 sudo docker run -ti --rm nvim-image /bin/bash
+```
 
 ### install nvim plugins
 ```bash
@@ -18,5 +22,4 @@ nvim ~/.config/nvim/lua/user/packer.lua
 tmux
 
 tmux source ~/.tmux.conf
-
 ```
