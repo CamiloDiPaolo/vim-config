@@ -45,6 +45,9 @@ RUN npm install -g n
 RUN npm install -g typescript
 RUN n lts
 
+## NVIM - Formatter
+RUN npm install -g prettier
+
 ## TMUX - SETUP
 COPY tmux/.tmux.conf /root/.tmux.conf
 
