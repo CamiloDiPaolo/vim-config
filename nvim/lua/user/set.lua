@@ -30,6 +30,6 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 
-vim.o.cmdheight=0 
+vim.o.cmdheight = 0
 
 vim.opt.showcmd = true

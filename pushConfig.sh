@@ -10,8 +10,12 @@ cp ./lua/camilo/remap.lua  $dockerFolder/nvim/lua/user/remap.lua
 cp ./lua/camilo/set.lua  $dockerFolder/nvim/lua/user/set.lua
 
 # COPY TMUX CONFIG FILES
-cp ./.tmux.conf $dockerFolder/tmux/.tmux.conf
+cd ~
+cp .tmux.conf $dockerFolder/tmux/.tmux.conf
+
+# PUSH REPO
+cd $dockerFolder
 
 git add .
-git commit -m "update config"
+git commit -m "update config" 
 git push origin master

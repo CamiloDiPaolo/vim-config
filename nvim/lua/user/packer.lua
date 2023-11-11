@@ -13,8 +13,10 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    -- gruvbox theme
+    -- themes
     use { "ellisonleao/gruvbox.nvim" }
+    use { "lunarvim/horizon.nvim" }
+
 
     -- treesitter for highligthing
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -39,6 +41,9 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },     -- Required
         }
     }
+
+    -- git diff
+    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
     -- prettier for formating
     use('MunifTanjim/prettier.nvim')
