@@ -44,12 +44,6 @@ lsp.set_sign_icons({
     info = '👽'
 })
 
--- CONFIG DIAGNOSIS MAPS
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>pe', vim.diagnostic.goto_prev)
-vim.keymap.set('n', '<leader>ne', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>el', vim.diagnostic.setloclist)
-
 
 lsp.setup()
 

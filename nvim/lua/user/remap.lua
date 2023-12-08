@@ -15,6 +15,3 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 -- SAVE FILE
 vim.keymap.set("n", "<leader>w", ':w<CR>')
 vim.keymap.set("n", "<leader>q", ':q<CR>')
-
--- Buffers
-vim.keymap.set("n", "<leader>bq", ':%bd<CR>:e#<CR>:bd#<CR>')

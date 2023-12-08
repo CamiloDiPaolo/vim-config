@@ -17,6 +17,3 @@ prettier.setup({
         "yaml",
     },
 })
-
-
-vim.keymap.set("n", "<leader>f", ':Prettier<CR>')

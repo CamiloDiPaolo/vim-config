@@ -48,16 +48,10 @@ return require('packer').startup(function(use)
     -- prettier for formating
     use('MunifTanjim/prettier.nvim')
 
-    -- nerdtree for files navigation
-    use { 'preservim/nerdtree' }
-    -- nerdtree plug for git
-    use { 'Xuyuanp/nerdtree-git-plugin' }
-    -- nerdtree plug for icons
-    use { 'ryanoasis/vim-devicons' }
-    -- nerdtree plug for colors
-    use { 'tiagofumo/vim-nerdtree-syntax-highlight' }
+    -- nvim-tree for filesystem
+    use { 'nvim-tree/nvim-tree.lua' }
 
-    -- nvim-web-icons for icons
+    -- nvim-web-icons for icons in telescope and nvim-tree
     use { 'nvim-tree/nvim-web-devicons' }
 
     -- lualine for status bar
@@ -65,6 +59,12 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
+    -- indent blankline for vertical lines in blocks
+    use "lukas-reineke/indent-blankline.nvim"
+
+    -- bufferline for buffer tab panel
+    use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
 
     -- tmux for using tmux
     use({
